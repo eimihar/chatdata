@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "server": "nodemon server.ts",
     "ingest": "ts-node scripts/ingest.ts"
