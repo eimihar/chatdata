@@ -15,5 +15,8 @@
     "pdf-parse": "^1.1.1",
     "pdfjs-dist": "^3.5.141",
     "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/pdf-parse": "^1.1.1"
   }
 }

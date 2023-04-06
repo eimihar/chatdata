@@ -11,11 +11,9 @@ export const run = async () => {
         '.pdf': (path) => new CustomPDFLoader(path),
     });
 
-    // const loader = new PDFLoader(filePath);
     const rawDocs = await directoryLoader.load();
 
     const loader = new PDFLoader(pdf);
-    // // const rawDocs = await loader.load();
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkSize: 1000,
         chunkOverlap: 200
@@ -28,11 +26,6 @@ export const run = async () => {
     } catch (e) {
         console.log(e);
     }
-
-
-    // console.log((await loader.))
-
-    // await PineconeStore.fromDocuments(textSplitter.splitDocuments())
 }
 
 run();
