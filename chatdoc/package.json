@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "server": "nodemon server.ts",
-    "ingest": "ts-node scripts/ingest.ts"
+    "ingest": "ts-node scripts/ingest.ts",
+    "runtest": "ts-node scripts/run-test.ts"
   },
   "dependencies": {
     "@pinecone-database/pinecone": "^0.0.10",
@@ -11,6 +12,8 @@
     "langchain": "^0.0.48",
     "moment": "^2.29.4",
     "nodemon": "^2.0.22",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^3.5.141",
     "typescript": "^5.0.3"
   }
 }
